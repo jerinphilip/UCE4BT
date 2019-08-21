@@ -490,12 +490,12 @@ class Transformer(interface.NMTModel):
             adam_epsilon=1e-9,
             clip_grad_norm=0.0,
             confidence_alpha=2.0,
-            sencf_convert=False,
+            sencf_convert=True,
             cf_type=1,
             encoder_cf_layers=[0,1,2],
             decoder_cf_layers=[-1],
             chead=8,
-            sencf_batch_max_length=False
+            sencf_batch_max_length=True
         )
 
         return params
